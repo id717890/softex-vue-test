@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
-      <v-layout column align-center>
+      <v-layout column align-center min-height="1000">
         <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
         <blockquote class="display-1">
           &#8220;Test job for interviewing&#8221;
