@@ -37,7 +37,9 @@
       <!-- <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>remove</v-icon>
       </v-btn> -->
-      <v-toolbar-title v-text="title"></v-toolbar-title>
+      <v-toolbar-title>
+        <router-link to="/" tag="span" style="cursor: pointer;" v-text="title"></router-link>
+      </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items  class="hidden-xs-only">
         <v-btn 

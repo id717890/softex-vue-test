@@ -6,8 +6,10 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { store } from './store'
+import VueCarousel from 'vue-carousel'
 
 Vue.use(Vuetify)
+Vue.use(VueCarousel)
 
 Vue.config.productionTip = false
 
@@ -20,5 +22,6 @@ new Vue({
   template: '<App/>',
   created () {
     this.$store.dispatch('menu/reciveMenuItems')
+    this.$store.dispatch('carousel/reciveCarouselItems')
   }
 })
