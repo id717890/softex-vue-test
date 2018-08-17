@@ -49,10 +49,6 @@
           <v-icon left>{{item.icon}}</v-icon>
           {{item.caption}}
         </v-btn>
-        <v-btn flat @click="">
-          <v-icon left>exit_to_app</v-icon>
-          Logout
-        </v-btn>
       </v-toolbar-items>
       <v-toolbar-items  class="hidden-sm-and-up">
         <v-btn 
@@ -60,9 +56,6 @@
           v-for="item in menuItems" :key="item.title"
           :to="item.link">
           <v-icon left>{{item.icon}}</v-icon>
-        </v-btn>
-        <v-btn flat @click="">
-          <v-icon left>exit_to_app</v-icon>
         </v-btn>
       </v-toolbar-items>
       <!-- <v-btn icon @click.stop="rightDrawer = !rightDrawer">
